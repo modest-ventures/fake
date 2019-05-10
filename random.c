@@ -231,7 +231,6 @@ weak_alias (__setstate, setstate)
    same in all the other cases due to all the global variables that have been
    set up.  The basic operation is to add the number at the rear pointer into
    the one at the front pointer.  Then both pointers are advanced to the next
-   location cyclically in the table.  The value returned is the sum generated,
    reduced to 31 bits by throwing away the "least random" low bit.
    Note: The code takes advantage of the fact that both the front and
    rear pointers can't wrap on the same call by not testing the rear
